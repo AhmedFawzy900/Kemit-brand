@@ -1,6 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../components/Header";
 import icon_img from "../../public/logo.png";
+import { Container } from "react-bootstrap";
 const Home = () => {
   return (
     <>
@@ -17,8 +18,10 @@ const Home = () => {
             sizes="30x30"
           />
         </Helmet>
-        <Header />
-        hallo
+          
+        <Container>
+            hallo
+        </Container>
     </>
   );
 };
