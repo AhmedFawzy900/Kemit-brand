@@ -10,6 +10,12 @@
   border-radius: 12px;
   margin-right: 22px !important;
 }
+@media screen and (max-width: 768px) {
+  .talk_btn {
+    display: none;
+  }
+    
+}
 /* Overlay Styling */
 .overlay {
   position: fixed;
