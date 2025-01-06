@@ -1,5 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Header from "../components/Header";
+
 import icon_img from "../../public/logo.png";
 import { Container } from "react-bootstrap";
 const Home = () => {

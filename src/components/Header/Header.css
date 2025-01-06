@@ -9,13 +9,14 @@
   padding: 6px 15px;
   border-radius: 12px;
   margin-right: 22px !important;
+  background: none !important;
 }
 @media screen and (max-width: 768px) {
   .talk_btn {
     display: none;
   }
-    
 }
+
 /* Overlay Styling */
 .overlay {
   position: fixed;
@@ -33,10 +34,10 @@
   cursor: pointer;
   padding: 10px;
   /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  height: 15px;
-  width: 40px;
+    flex-direction: column;
+    justify-content: space-between; */
+  /* height: 15px; */
+  width: 50px;
 }
 
 .custom-toggle-btn .line {
@@ -44,15 +45,12 @@
   height: 2px; /* Thickness of the lines */
   background-color: var(--secondary-color); /* Color of the lines */
   transition: all 0.3s ease;
-  
 }
-.custom-toggle-btn .line-1-open {
- 
-    margin-top: 2px;
+.custom-toggle-btn .line:first-child {
+  margin-top: 2px;
 }
-.custom-toggle-btn .line-2-open {
- 
-    margin-top: 8px;
+.custom-toggle-btn .line:nth-child(2) {
+  margin-top: 8px;
 }
 
 /* Animation for the first line */

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Header.css";
+import "./Header.css";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State for sidebar toggle
 
@@ -17,11 +17,7 @@ const Header = () => {
       </div>
       <div>
         {/* Toggle Button */}
-        <button
-          className="talk_btn btn btn-outline-primary mx-2"
-          onClick={toggleSidebar}
-          aria-label="Toggle Sidebar"
-        >
+        <button className="talk_btn btn-outline-primary mx-2">
           LETS TALK
         </button>
         <button
