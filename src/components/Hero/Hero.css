@@ -1,0 +1,111 @@
+/* src/components/Hero.css */
+.hero-section {
+  height: 100vh;
+  padding: 20px 0;
+}
+
+/* Logo Styling */
+.logo img {
+  max-width: 85% !important;
+}
+
+.title .title-text {
+  color: var(--secondary-color);
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.title .title-text sup {
+  font-size: 14px;
+  margin: 3px;
+}
+
+.description p {
+  font-size: 36px;
+  color: var(--secondary-color);
+}
+.icon {
+  position: relative;
+}
+.icon img {
+  width: 70%;
+  position: relative;
+}
+
+.icon .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  font-size: 9px;
+}
+/* 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 15s linear infinite;
+  animation-timing-function: steps(3, end);
+} */
+
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-bottom: 15px;
+  }
+  .icon{
+    display: none !important;
+  }
+  .title ,.description {
+    text-align: center !important;
+  }
+  .description p{
+    font-size: 18px !important;
+  }
+}
+
+/* Blue Line Styling */
+.blue-line {
+  width: 50%; /* Partial line (adjust as needed) */
+  height: 2px; /* Thickness of the line */
+  background-color: #007BFF; /* Blue color */
+  position: relative;
+  overflow: hidden; /* Hide overflow for animation */
+}
+
+/* Growing Animation */
+@keyframes grow {
+  0% {
+    width: 0%; /* Start with no width */
+  }
+  100% {
+    width: 50%; /* Grow to 50% width */
+  }
+}
+
+.blue-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #007BFF; /* Blue color */
+  animation: grow 2s ease-in-out infinite; /* Apply growing animation */
+}

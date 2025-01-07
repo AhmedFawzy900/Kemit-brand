@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import icon_img from "../../public/logo.png";
 import { Container } from "react-bootstrap";
+import Hero from "../components/Hero/Hero";
 const Home = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Home = () => {
         </Helmet>
           
         <Container>
-            hallo
+            <Hero />
         </Container>
     </>
   );
