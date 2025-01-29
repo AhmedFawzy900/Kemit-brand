@@ -1,0 +1,128 @@
+
+  
+  .coming-soon-container {
+    background-image: url('../assets/Background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .email-form {
+    margin-top: 20px;
+  }
+  
+  .email-form input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .email-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .email-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+
+  h1{
+    letter-spacing: 50px;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  @media screen and (max-width:676px) {
+    h1{
+        letter-spacing: 20px;
+    }
+  }
+
+  
+  .form-control {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 50px !important;
+    background: none !important; /* Light transparent */
+    color: white !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  .form-control:focus{
+    border: 0!important;
+    outline: 0 !important;
+  }
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+ .bar-btn{
+    width: 600px !important;
+     height: 80px; 
+ }
+
+ .bar-btn img{
+    width: 100%;
+ }
+  @media screen and (max-width: 700px) {
+    .bar-btn{
+      width: 300px !important;
+    }
+    .bar-btn img{
+        width: 380px;
+        position: "absolute";
+        top: 0;
+        left: -45px !important;
+        z-index: 1;
+    }
+
+    .btn {
+        right: -31px !important;
+    }
+
+    .form-control {
+        left: -27px !important;
+    }
+  }
